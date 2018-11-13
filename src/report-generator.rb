@@ -68,4 +68,4 @@ File.open('assets/outputs/'+filename, "w+") do |f|
   f.puts(output)
 end
 
-puts 'Text file generated'
+puts 'CSV file generated'
