@@ -42,12 +42,12 @@ report.each do |key, array|
 		#If a key matches 
 		if key == a.at(0)
 			#Add to total value (which will create a combined total)
-			total_value = array.to_i
+			total_value = array.gsub(/,/,'').to_i
 			#Once it has found one match, it should go over the same array again to see if the key can match a second value in the array - if it can - we care about the output
 			report.each do |ke, ar|
 				#This time we want to find the opposing value (likely freesat in the second array column) and compare to the rest of the report - if we get a match, we know its available of both platforms and thus we combine the total values
 				if a.at(1) == ke
-					total_value = total_value + ar.to_i
+					total_value = total_value + ar.gsub(/,/,'').to_i
 					#Push output to array
 					output = output.push(k.to_s+","+total_value.to_s)
 				end
