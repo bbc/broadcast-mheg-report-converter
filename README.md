@@ -10,7 +10,7 @@ A ruby script for generating Comscore reports for the Broadcast Red Button servi
 The current comscore reports for MHEG services on Broadcast Red Button only send the file paths to the particular pages you may be looking at - these are normally not human readable and difficult to attribute what page the report is referring to
 
 ## So what's this for?
-Basically, this allows you to export a particular report and generate a human-readable outcome as a pipe-delimited text file.
+Basically, this allows you to export a particular report and generate a human-readable outcome as a CSV.
 
 ## So how do I do that?
 - Firstly, in Comscore, navigate to report ID 31780 (Broadcast RCs by Popularity - Browsers)
